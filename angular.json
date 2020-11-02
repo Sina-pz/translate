@@ -4,6 +4,15 @@
   "newProjectRoot": "projects",
   "projects": {
     "translate": {
+      "i18n": {
+        "locales": {
+      "en": "src/app/translate/messages.en.xlf",
+      "fr": "src/app/translate/messages.fr.xlf",
+      "de": "src/app/translate/messages.de.xlf",
+      "zh": "src/app/translate/messages.zh.xlf",
+      "ar": "src/app/translate/messages.ar.xlf"
+      }
+    },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -33,6 +42,21 @@
             "scripts": []
           },
           "configurations": {
+            "en": {
+              "localize": ["en"]
+            },
+            "fr" : {
+              "localize": ["fr"]
+            },
+            "de" : {
+              "localize": ["de"]
+            },
+            "zh" : {
+              "localize": ["zh"]
+            },
+            "ar" : {
+              "localize": ["ar"]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -63,6 +87,7 @@
             }
           }
         },
+
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
@@ -71,6 +96,21 @@
           "configurations": {
             "production": {
               "browserTarget": "translate:build:production"
+            },
+            "en": {
+              "browserTarget": "translate:build:en"
+            },
+            "fr": {
+              "browserTarget": "translate:build:fr"
+            },
+            "ar": {
+              "browserTarget": "translate:build:ar"
+            },
+            "zh": {
+              "browserTarget": "translate:build:zh"
+            },
+            "de": {
+              "browserTarget": "translate:build:de"
             }
           }
         },
