@@ -6,13 +6,13 @@
     "translate": {
       "i18n": {
         "locales": {
-      "en": "src/app/translate/messages.en.xlf",
-      "fr": "src/app/translate/messages.fr.xlf",
-      "de": "src/app/translate/messages.de.xlf",
-      "zh": "src/app/translate/messages.zh.xlf",
-      "ar": "src/app/translate/messages.ar.xlf"
-      }
-    },
+          "en": "src/app/translate/messages.en.xlf",
+          "fr": "src/app/translate/messages.fr.xlf",
+          "de": "src/app/translate/messages.de.xlf",
+          "zh": "src/app/translate/messages.zh.xlf",
+          "ar": "src/app/translate/messages.ar.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -37,25 +37,37 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/devextreme/dist/css/dx.common.css",
+              "node_modules/devextreme/dist/css/dx.light.css",
               "src/styles.scss"
             ],
             "scripts": []
           },
           "configurations": {
             "en": {
-              "localize": ["en"]
+              "localize": [
+                "en"
+              ]
             },
-            "fr" : {
-              "localize": ["fr"]
+            "fr": {
+              "localize": [
+                "fr"
+              ]
             },
-            "de" : {
-              "localize": ["de"]
+            "de": {
+              "localize": [
+                "de"
+              ]
             },
-            "zh" : {
-              "localize": ["zh"]
+            "zh": {
+              "localize": [
+                "zh"
+              ]
             },
-            "ar" : {
-              "localize": ["ar"]
+            "ar": {
+              "localize": [
+                "ar"
+              ]
             },
             "production": {
               "fileReplacements": [
@@ -87,7 +99,6 @@
             }
           }
         },
-
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
@@ -163,6 +174,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "translate"
 }
