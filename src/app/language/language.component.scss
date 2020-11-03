@@ -1,66 +1,91 @@
-* {
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
+// * {
+//   font-family: Helvetica, sans-serif;
+//   font-size: 14px;
+// }
+
+// .container {
+//   position: relative;
+//   top: 200px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   background: #b4321bc7;
+//   width: 600px;
+//   height: 100px;
+//   border-radius: 4px;
+//   border: 1px solid black;
+
+//   .body {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     padding: 4px;
+//     padding-bottom: 8px;
+
+//     .field-label {
+
+//       padding-left: 6px;
+//       padding-top: 40px;
+//       color: white;
+//       font-weight: bold;
+//       font-size: 14px;
+//       // border: 1px solid white;
+//     }
+
+//     .field-value {
+//       position: relative;
+//       right: 150px;
+//       top: 40px;
+//       width: 100px;
+//       // border: 1px solid black;
+
+//       input[type=text] {
+//         position: relative;
+//         background: hsla(0, 0%, 100%, 0);
+//         border: 1px solid white;
+//         border-radius: 40px;
+//         width: 200px;
+//         height: 20px;
+
+//       }
+
+//       input[type=text]:focus {
+
+//         outline: 0;
+//       }
+
+//       ::placeholder {
+//         color: white;
+//       }
+
+//     }
+
+//   }
+
+
+// }
+sup {
+  font-size: 0.8em;
+  vertical-align: super;
+  line-height: 0;
 }
 
-.container {
-  position: relative;
-  top: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #b4321bc7;
-  width: 600px;
-  height: 100px;
-  border-radius: 4px;
-  border: 1px solid black;
+::ng-deep .options {
+  padding: 20px;
+  background-color: rgba(191, 191, 191, 0.15);
+  margin-bottom: 20px;
+}
 
-  .body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 4px;
-    padding-bottom: 8px;
+::ng-deep .options .dx-fieldset {
+  margin: 0;
+}
 
-    .field-label {
+::ng-deep .caption {
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 15px;
+}
 
-      padding-left: 6px;
-      padding-top: 40px;
-      color: white;
-      font-weight: bold;
-      font-size: 14px;
-      // border: 1px solid white;
-    }
-
-    .field-value {
-      position: relative;
-      right: 150px;
-      top: 40px;
-      width: 100px;
-      // border: 1px solid black;
-
-      input[type=text] {
-        position: relative;
-        background: hsla(0, 0%, 100%, 0);
-        border: 1px solid white;
-        border-radius: 40px;
-        width: 200px;
-        height: 20px;
-
-      }
-
-      input[type=text]:focus {
-
-        outline: 0;
-      }
-
-      ::placeholder {
-        color: white;
-      }
-
-    }
-
-  }
-
-
+::ng-deep .dx-theme-material .dx-accordion .dx-accordion-item-opened .dx-accordion-item-title {
+  padding-top: 20px;
 }
