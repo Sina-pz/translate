@@ -1,0 +1,19 @@
+
+<p>DateTime as Milliseconds : {{todayNumber}} 
+    datepipe:{{todayNumber | date}}</p>
+    <p>DateTime as object : {{todayDate}} 
+    datepipe:{{todayDate | date}}</p>
+    <p>DateTime as string : {{todayString}} 
+    datepipe:{{todayString | date}}</p>
+    <p>DateTime as iso string : {{todayISOString}} 
+    datepipe:{{todayISOString | date}}</p>
+        
+        
+    <p >timezone Universal
+        {{todayDate | date : 'short' : 'UTC'}}
+    </p>
+    <p >timezone offset
+        {{todayDate | date : 'short' : '-5'}}
+    </p>
+
+    <p>French date time is {{todayDate | date:'full':'+0200':'fr'}}</p>

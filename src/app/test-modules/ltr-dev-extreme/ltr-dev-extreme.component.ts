@@ -7,11 +7,10 @@ import { DxAccordionModule,
          DxMenuModule,
          DxTreeViewModule,
          DxTemplateModule } from 'devextreme-angular';
-import { AppService } from '../app.service';
+import { Continent } from 'src/app/models/continent';
+import { EuropeCountry } from 'src/app/models/europe-country';
+import { AppService } from 'src/app/app.service';
 
-
-import { Continent } from './../models/continent';
-import { EuropeCountry } from './../models/europe-country';
 
 
 
