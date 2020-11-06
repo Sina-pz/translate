@@ -1,18 +1,96 @@
+<!-- <?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="66f72ce8ce0ef8ff762be14791dede68fb05fe30" datatype="html">
+        <source> Language</source>
+        <target>
+            Langue
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/language/language.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="21be0080cce667b60599bbee2c7368cb178d5a50" datatype="html">
+        <source>languages</source>
+        <target>Langues</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/language/language.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bdbe4642888342c84ab8b095455f952e0f58b2ee" datatype="html">
+        <source> Enter the Name</source>
+                <target>Veuillez entrer le nom </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/language/language.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c4a8655e28998f4dd34d8ea08fc5c744f83ca09a" datatype="html">
+        <source>John Smith</source>
+        <target>John Smith</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/language/language.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff> -->
+
+
+<!-- <?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="bdbe4642888342c84ab8b095455f952e0f58b2ee" datatype="html">
+        <source> Enter the Name</source>
+                        <target>Veuillez entrer le nom </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/language/language.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff> -->
+
+
+
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="936b3e9424d8d0fa2f9f94f705d15749758fc1b8" datatype="html">
-        <source>
-            Please Enter the Name
-        </source>
-        <target>Veuillez entrer le nom </target>
+      <trans-unit id="66f72ce8ce0ef8ff762be14791dede68fb05fe30" datatype="html">
+        <source> Language</source>
+                <target>
+            Langue
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/language/language.component.html</context>
-          <context context-type="linenumber">4</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bdbe4642888342c84ab8b095455f952e0f58b2ee" datatype="html">
+        <source> Enter the Name</source>
+                               <target>Veuillez entrer le nom </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/language/language.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c4a8655e28998f4dd34d8ea08fc5c744f83ca09a" datatype="html">
+        <source>John Smith</source>
+              <target>John Smith</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/language/language.component.html</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
     </body>
   </file>
 </xliff>
+
 

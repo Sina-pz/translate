@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Test';
+  public title = 'Test';
+  public rtlEnabled = false;
 
-  
+  constructor() { }
+
+  public selectArabic(value: boolean) {
+    this.rtlEnabled = value;
+  }
+
 }

@@ -8,43 +8,22 @@
           <input  type="text" placeholder="" id="fname" name="fname">
         </div>
 
-    </div>
-
-
+    </div> 
 </div> -->
 
-
-<div [ngClass]="{'dx-rtl': rtlEnabled}">
-
-  <div class="options">
-    <div class="dx-fieldset">
-      <div class="dx-field">
-        <div class="dx-field-label"> Language</div>
-        <div class="dx-field-value">
-          <!-- <dx-text-box value="John Smith"
-            [rtlEnabled]="rtlEnabled"> </dx-text-box> -->
-
-          <!-- <dx-select-box
-            [items]="languages"
-            [value]="languages[1]"
-            (onValueChanged)="selectLanguage($event)"
-        ></dx-select-box> -->
-
-          <dx-select-box [items]="languages" [value]="languages[1]" (onValueChanged)="selectLanguage($event)"
-            [rtlEnabled]="rtlEnabled"></dx-select-box>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
+ <!--// Translate all the elements -->
+<div [ngClass]="{'dx-rtl': rtlEnabled}">  
 
   <div class="dx-fieldset">
     <div class="dx-field">
-      <div class="dx-field-label"> Enter the Name</div>
+      <div i18n class="dx-field-label"> Enter the Name</div>
       <div class="dx-field-value">
-        <dx-text-box value="John Smith" [rtlEnabled]="rtlEnabled"> </dx-text-box>
+        <!-- // text-box only -->
+        <dx-text-box i18n-value value="John Smith" [rtlEnabled]="rtlEnabled"> </dx-text-box>  
       </div>
     </div>
   </div>
 </div>
+
+
+

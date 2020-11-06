@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-language',
@@ -7,18 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LanguageComponent implements OnInit {
 
-  public rtlEnabled = false;
-  languages: string[] = [
-    "Arabic",
-    "English",
-    "German",
-    "French"  
-];
+  @Input() rtlEnabled: boolean;
   constructor() { }
 
   ngOnInit(): void {
   }
-  selectLanguage(e) {
-    this.rtlEnabled = e.value === this.languages[0];
-}
+
 }
