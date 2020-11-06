@@ -1,0 +1,22 @@
+
+<div [ngClass]="{ 'dx-rtl': rtlEnabled }">
+  <!-- <div class="options">
+    
+  </div> -->
+  <div class="dx-fieldset">
+    <div class="dx-field">
+      <div class="dx-field-label">{{textBoxTitle}}</div>
+      <div class="dx-field-value">
+        <dx-text-box [showClearButton]="true" [value]="textValue" [rtlEnabled]="rtlEnabled">
+        </dx-text-box>
+      </div>
+    </div>
+    <div class="dx-field">
+      <div class="dx-field-label">{{selectBoxTitle}}</div>
+      <div class="dx-field-value">
+        <dx-select-box [items]="europeanUnion" [value]="europeanUnion[0]" [displayExpr]="displayExpr"
+          [rtlEnabled]="rtlEnabled">
+        </dx-select-box>
+      </div>
+    </div>
+</div>

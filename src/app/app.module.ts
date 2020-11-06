@@ -14,14 +14,18 @@ import { DxAccordionModule,
          DxTreeViewModule,
          DxTemplateModule } from 'devextreme-angular';
 import { LtrDevExtremeComponent } from './ltr-dev-extreme/ltr-dev-extreme.component';
-import { DxTextBoxModule } from "devextreme-angular";
+import { DxTextBoxModule } from 'devextreme-angular';
+import { NvLanguageComponent } from './shared/nv-language/nv-language.component';
+import { TextBoxRtlComponent } from './text-box-rtl/text-box-rtl.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LanguageComponent,
     RightToLeftComponent,
-    LtrDevExtremeComponent
+    LtrDevExtremeComponent,
+    NvLanguageComponent,
+    TextBoxRtlComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,11 @@ import { DxTextBoxModule } from "devextreme-angular";
     DxMenuModule,
     DxTreeViewModule,
     DxTemplateModule,
-    DxTextBoxModule
+    DxTextBoxModule,
+    BrowserModule,
+    DxSelectBoxModule,
+    DxTextBoxModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
