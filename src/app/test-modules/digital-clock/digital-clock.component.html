@@ -1,0 +1,15 @@
+
+<div class="digital-clock-container">
+    <div class="clock section" *ngIf="hour$ | async as hour" >
+        {{hour}}
+    </div>
+    <div class="separator">:</div>
+    <div class="clock section" *ngIf="minute$ | async as minute"> 
+        {{minute}}
+    </div>
+    <div class="separator">:</div>
+    <div class="clock section" *ngIf="second$ | async as second">
+        {{second}}
+    </div>
+   
+</div>

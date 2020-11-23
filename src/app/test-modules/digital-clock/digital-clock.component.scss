@@ -1,0 +1,30 @@
+.digital-clock-container {
+
+    display: grid;
+    grid-template-columns: 35px 4px 35px 4px 35px;
+    border: 2px solid #555;
+    background-color: black;
+    margin: 2px;
+    .section {
+        padding: 2px;
+
+        &.clock {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            color: red;
+            
+            font-size: x-large;
+            font-weight: 400;      
+
+        }
+
+    }
+    .separator {
+        color: white;
+        font-size: large;  
+        font-weight: 400;
+        padding-top: 7px;
+
+      }
+}

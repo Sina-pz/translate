@@ -1,0 +1,10 @@
+.clocks-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+
+    .digital {
+        padding-top: 30px;
+        padding-right: 40px;
+    }
+}

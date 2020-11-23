@@ -16,13 +16,17 @@ export class DatePipeComponent implements OnInit {
 
   todayNumber: number = Date.now();
   todayDate: Date = new Date();
+
   todayString: string = new Date().toDateString();
   todayISOString: string = new Date().toISOString();
-  constructor() { }
+
+  constructor() {
+    // this.todayDateSecond = this.todayDate.getSeconds();
+    // this.todayDateMinute = this.todayDate.getMinutes();
+    // this.todayDateHour = this.todayDate.getHours();
+   }
 
   ngOnInit(): void {
   }
-  
-
 
 }
