@@ -10,11 +10,15 @@ export class ClockCoreService {
   private hourSubject  = new BehaviorSubject(0);
 
   constructor() {
+    this.reset();
+
     setInterval(() => {
-      const currentTime = new Date();
-      this.setSecond(currentTime.getSeconds());
-      this.setMinute(currentTime.getMinutes());
-      this.setHour(currentTime.getHours());
+      const newSecond = (this.secondSubject.value + 1) ;
+      const newMinute = newSecond === 0 ? ((this.minuteSubject.value + 1)) : this.minuteSubject.value;
+      const newHour = newMinute === 0 ? ((this.hourSubject.value + 1) ) : this.hourSubject.value;
+      this.setSecond(newSecond);
+      this.setMinute(newMinute);
+      this.setHour(newHour);
     }
       , 1000);
    }
@@ -29,14 +33,21 @@ export class ClockCoreService {
      return this.hourSubject.asObservable();
    }
 
+   reset(): void {
+    const currentTime = new Date();
+    this.setSecond(currentTime.getSeconds());
+    this.setHour(currentTime.getHours());
+    this.setMinute(currentTime.getMinutes());
+  }
+
    setSecond(second: number): void {
-     this.secondSubject.next(second);
+     this.secondSubject.next((second < 0 ? second + 60 : second) );
    }
    setMinute(minute: number): void {
-     this.minuteSubject.next(minute);
+     this.minuteSubject.next((minute < 0 ? minute + 60 : minute));
    }
    setHour(hour: number): void {
-     this.hourSubject.next(hour);
+     this.hourSubject.next((hour < 0 ? hour + 24 : hour));
    }
 
 }

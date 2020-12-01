@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./digital-clock.component.scss']
 })
 export class DigitalClockComponent implements OnInit {
+
   second$: Observable<number>;
   minute$: Observable<number>;
   hour$: Observable<number>;

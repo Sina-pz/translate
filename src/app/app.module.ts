@@ -1,3 +1,5 @@
+import { SettingBoxComponent } from './test-modules/setting-box/setting-box.component';
+import { ClocksSettingComponent } from './test-modules/clocks-setting/clocks-setting.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -32,7 +34,9 @@ import { DigitalClockComponent } from './test-modules/digital-clock/digital-cloc
     TextBoxRtlComponent,
     DatePipeComponent,
     AnalogClockComponent,
-    DigitalClockComponent
+    DigitalClockComponent,
+    ClocksSettingComponent,
+    SettingBoxComponent
   ],
   imports: [
     BrowserModule,
