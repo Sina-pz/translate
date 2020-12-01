@@ -1,3 +1,5 @@
+import { SettingBoxComponent } from './test-modules/setting-box/setting-box.component';
+import { ClocksSettingComponent } from './test-modules/clocks-setting/clocks-setting.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -19,6 +21,8 @@ import { NvLanguageComponent } from './shared/nv-language/nv-language.component'
 import { TextBoxRtlComponent } from './text-box-rtl/text-box-rtl.component';
 import { DatePipeComponent } from './test-modules/date-pipe/date-pipe.component';
 import { LtrDevExtremeComponent } from './test-modules/ltr-dev-extreme/ltr-dev-extreme.component';
+import { AnalogClockComponent } from './test-modules/analog-clock/analog-clock.component';
+import { DigitalClockComponent } from './test-modules/digital-clock/digital-clock.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { LtrDevExtremeComponent } from './test-modules/ltr-dev-extreme/ltr-dev-e
     LtrDevExtremeComponent,
     NvLanguageComponent,
     TextBoxRtlComponent,
-    DatePipeComponent
+    DatePipeComponent,
+    AnalogClockComponent,
+    DigitalClockComponent,
+    ClocksSettingComponent,
+    SettingBoxComponent
   ],
   imports: [
     BrowserModule,

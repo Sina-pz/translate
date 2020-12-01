@@ -1,0 +1,14 @@
+<div class="setting">
+    <div class="header">{{"Setting"}}</div>
+   <app-setting-box 
+   (addHourClick)="onAddHourClick()"
+   (addMinusClick)="onAddMinuteClick()"
+   (addSecondClick)="onAddSecondClick()"
+   (minusHourClick)="onMinusHourClick()"
+   (minusMinusClick)="onMinusMinuteClick()"
+   (minusSecondClick)="onMinusSecondClick()"
+   [hour]="hour$ | async"
+   [minute]="minute$ | async"
+   [second]="second$ | async"
+   ></app-setting-box>
+  </div>

@@ -1,0 +1,21 @@
+<div class="setting-box-container">
+
+  <div class="box-row ">
+    <div class="add-minus" (click)="onAddHourClick()"> {{"+"}}</div>
+    <div class="add-minus" (click)="onAddMinuteClick()">{{"+"}}</div>
+    <div class="add-minus" (click)="onAddSecondClick()">{{"+"}}</div>
+  </div>
+  <div class="box-row">
+    <div class="time">{{hour}}</div>
+    <div class="time">{{minute}}</div>
+    <div class="time">{{second}}</div>
+
+  </div>
+  <div class="box-row ">
+    <div class="add-minus" (click)="onMinusHourClick()">{{"-"}}</div>
+    <div class="add-minus" (click)="onMinusMinuteClick()" >{{"-"}}</div>
+    <div class="add-minus" (click)="onMinusSecondClick()">{{"-"}}</div>
+
+  </div>
+
+</div>
